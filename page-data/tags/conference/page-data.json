@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/conference/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/conference-on-javascript/"},"frontmatter":{"title":"Conference on Javascript","date":"September 09, 2017"}}}]}},"pageContext":{"tag":"Conference"}},"staticQueryHashes":["2478211480"]}
