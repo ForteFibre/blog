@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/blog",
   siteMetadata: {
     title: `Flexible Gatsby`,
     description: `I am a web developer focusing on front-end development. Always hungry to keep learning.`,
@@ -11,7 +12,6 @@ module.exports = {
       linkedin: `wangonya`,
       email: `kwangonya@gmail.com`,
     },
-    // pathPrefix: `blog`,
   },
   plugins: [
     {
