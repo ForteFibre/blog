@@ -49,7 +49,7 @@
     "url": "git+https://github.com/wangonya/flexible-gatsby.git"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
     "develop": "gatsby develop",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
