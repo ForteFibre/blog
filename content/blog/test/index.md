@@ -1,9 +1,12 @@
 ---
-title: 'Welcome to Gatsby!'
+title: 'Japanese'
 date: 2017-04-06 13:32:20 +0300
 description: Go ahead and edit this file and re-build the site to see your changes. # Add post description (optional)
-img: # Add image post (optional)
+tags: [a]
+img: ./gatsby-astronaut.png # Add image post (optional)
 ---
+
+ああああ
 
 You’ll find this post in your `content/blog` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `gatsby develop`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -24,5 +27,3 @@ Check out the [Gatsby docs][gatsby-docs] for more info on how to get the most ou
 
 [gatsby-docs]: https://www.gatsbyjs.org/docs/
 [katex-plugin]: https://www.gatsbyjs.org/packages/gatsby-remark-katex/
-
-日本語 テスト
