@@ -11,7 +11,7 @@ module.exports = {
       linkedin: `wangonya`,
       email: `kwangonya@gmail.com`,
     },
-    pathPrefix: `blog`
+    // pathPrefix: `blog`,
   },
   plugins: [
     {
