@@ -6,11 +6,11 @@ module.exports = {
     author: `ForteFibre`,
     siteUrl: `https://github.com/wangonya/flexible-gatsby`,
     social: {
-      twitter: `wang0nya`,
+      twitter: `kitrobocon`,
       facebook: ``,
       github: ``,
       linkedin: ``,
-      email: `kwangonya@gmail.com`,
+      email: `kitrobocon @ gmail.com`,
     },
   },
   plugins: [
