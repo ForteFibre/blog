@@ -85,17 +85,13 @@ class BlogIndex extends React.Component {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query blogPageQuery($skip: Int!, $limit: Int!) {
+  query blogPageQuery {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___number], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
+    allMarkdownRemark(sort: {fields: frontmatter___number, order: DESC}) {
       edges {
         node {
           excerpt(pruneLength: 100)
@@ -104,17 +100,12 @@ export const pageQuery = graphql`
           }
           timeToRead
           frontmatter {
-            updated_at(formatString: "YYYY, MMM DD")
             title
+            updated_at(formatString: "YYYY, MMM, DD")
             number
-            img {
-              childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH, formats: [AUTO, AVIF, WEBP])
-              }
-            }
           }
         }
       }
     }
-  }
+  }   
 `

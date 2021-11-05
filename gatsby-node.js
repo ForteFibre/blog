@@ -8,10 +8,9 @@ exports.createPages = ({ graphql, actions }) => {
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const tagTemplate = path.resolve(`./src/templates/tags.js`)
 
-  return graphql(
-    `{
+  return graphql(`{
   allMarkdownRemark(
-    sort: {fields: [frontmatter___date], order: DESC}
+    sort: {fields: [frontmatter___number], order: DESC}
     limit: 1000
   ) {
     edges {
@@ -21,12 +20,6 @@ exports.createPages = ({ graphql, actions }) => {
         }
         frontmatter {
           title
-          tags
-          img {
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-            }
-          }
         }
       }
     }

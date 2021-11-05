@@ -37,11 +37,11 @@ const Tags = ({ pageContext, data }) => {
 export default Tags
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query($num: Int) {
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      sort: { fields: [frontmatter___number], order: DESC }
+      filter: { frontmatter: { number: { in: [$num] } } }
     ) {
       totalCount
       edges {
@@ -51,7 +51,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            updated_at(formatString: "MMMM DD, YYYY")
           }
         }
       }
