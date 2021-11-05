@@ -43,7 +43,7 @@ class BlogPostTemplate extends React.Component {
                 </header>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 <div className="page-footer">
-                  <div className="page-tag">
+                  {/* <div className="page-tag">
                     {post.frontmatter.tags &&
                       post.frontmatter.tags.map((tag) => (
                         <span key={tag}>
@@ -52,7 +52,7 @@ class BlogPostTemplate extends React.Component {
                           </Link>
                         </span>
                       ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

@@ -42,7 +42,7 @@ class BlogIndex extends React.Component {
                   </h2>
                   <p>{node.excerpt}</p>
                   <span className="post-date">
-                    {node.frontmatter.date}&nbsp;&nbsp;—&nbsp;
+                    {node.frontmatter.updated_at}&nbsp;&nbsp;—&nbsp;
                   </span>
                   <span className="post-words">
                     {node.timeToRead} minute read
