@@ -92,20 +92,21 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___number], order: DESC }
       limit: $limit
       skip: $skip
     ) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 100)
           fields {
             slug
           }
           timeToRead
           frontmatter {
-            date(formatString: "YYYY, MMM DD")
+            updated_at(formatString: "YYYY, MMM DD")
             title
+            number
             img {
               childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH, formats: [AUTO, AVIF, WEBP])
