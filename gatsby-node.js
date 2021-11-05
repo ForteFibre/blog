@@ -20,6 +20,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
         frontmatter {
           title
+          updated_at
         }
       }
     }
