@@ -38,7 +38,7 @@ class BlogPostTemplate extends React.Component {
                 <header className="header-page">
                   <h1 className="page-title">{post.frontmatter.title}</h1>
                   <div className="page-date">
-                    <span>{post.frontmatter.date}</span>
+                    <span>{post.frontmatter.updated_at}</span>
                   </div>
                 </header>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
