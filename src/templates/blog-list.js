@@ -91,7 +91,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: {fields: frontmatter___number, order: DESC}) {
+    allMarkdownRemark(sort: {fields: frontmatter___updated_at, order: DESC}) {
       edges {
         node {
           excerpt(pruneLength: 100)
@@ -102,7 +102,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             updated_at(formatString: "YYYY, MMM, DD")
-            number
           }
         }
       }
